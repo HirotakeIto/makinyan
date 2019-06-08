@@ -23,6 +23,29 @@ pwd = os.path.dirname(os.path.abspath(__file__))
 version = '1.0.0'
 
 setup(
-  name='makinyan',
-  version='version'
+    name='makinyan',
+    version='version',
+    url='https://github.com/Shochan024/makinyan',
+    author='shochan024',
+    author_email='jadetech0024@gmail.com',
+    maintainer='shochan024',
+    maintainer_email='jadetech0024@gmail.com',
+    description='Python Data Analitics Tool',
+    long_description="readme",
+    packages=find_packages(),
+    install_requires=_get_requirements('requirements.txt'),
+    license="MIT",
+    classifiers=[
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'License :: OSI Approved :: MIT License',
+    ],
+    entry_points="""
+        # -*- Entry points: -*-
+        [console_scripts]
+        pkgdep = pypipkg.scripts.command:main
+    """,
 )
