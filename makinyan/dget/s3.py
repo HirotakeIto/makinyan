@@ -14,8 +14,7 @@ class S3:
     S3に接続し、各種機能を提供するクラス
     """
 
-    def __init__( self , BUCKET_NAME ):
-        self.BUCKET_NAME = BUCKET_NAME
+    def __init__( self , BUCKET_NAME="" ):
         self.s3 = boto3.resource('s3')
         self.bucket = self.s3.Bucket( BUCKET_NAME )
 
