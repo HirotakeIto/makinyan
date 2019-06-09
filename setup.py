@@ -20,13 +20,13 @@ def _get_requirements( filename ):
 
 
 pwd = os.path.dirname(os.path.abspath(__file__))
-version = '0.0.8'
+version = '0.0.11'
 
 setup(
     name='makinyan',
     version=version,
     py_modules=['makinyan'],
-    url='https://github.com/Shochan024/makinyan.git',
+    url='https://github.com/Shochan024/makinyan',
     author='shochan024',
     author_email='jadetech0024@gmail.com',
     maintainer='shochan024',

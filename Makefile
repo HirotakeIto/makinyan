@@ -2,7 +2,13 @@ test-deploy :
 	rm -r ./dist/*
 	python setup.py sdist
 	python setup.py bdist_wheel
-	twine upload --repository-url https://test.pypi.org/legacy/   dist/*
+	twine upload --repository pypitest dist/*
+
+deploy:
+	rm -r ./dist/*
+	python setup.py sdist
+	python setup.py bdist_wheel
+	twine upload --repository pypi dist/*
 
 build:
 	python setup.py sdist
