@@ -25,7 +25,7 @@ class S3:
         return : list型
         """
 
-        return self.bucket.list()
+        return self.bucket.list_buckets()
 
 
     def deepls( self , pre ):

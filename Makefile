@@ -10,7 +10,7 @@ deploy:
 	python setup.py bdist_wheel
 	twine upload --repository pypi dist/*
 
-build:
+init:
 	rm -r ./dist/*
 	python setup.py sdist
 	python setup.py bdist_wheel
