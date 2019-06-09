@@ -20,12 +20,12 @@ def _get_requirements( filename ):
 
 
 pwd = os.path.dirname(os.path.abspath(__file__))
-version = '0.0.3'
+version = '0.0.4'
 
 setup(
     name='makinyan',
     version=version,
-    download_url='https://github.com/Shochan024/makinyan/blob/master/dist/makinyan-0.0.3.tar.gz',
+    download_url='https://github.com/Shochan024/makinyan/blob/master/dist/makinyan-0.0.4.tar.gz',
     author='shochan024',
     author_email='jadetech0024@gmail.com',
     maintainer='shochan024',
