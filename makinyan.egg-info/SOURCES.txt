@@ -8,3 +8,7 @@ makinyan.egg-info/dependency_links.txt
 makinyan.egg-info/entry_points.txt
 makinyan.egg-info/requires.txt
 makinyan.egg-info/top_level.txt
+makinyan/analyzer/__init__.py
+makinyan/dget/__init__.py
+makinyan/dget/s3.py
+makinyan/optimizer/__init__.py
