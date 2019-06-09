@@ -1,13 +1,14 @@
 Metadata-Version: 1.2
 Name: makinyan
-Version: 0.0.1
+Version: 0.0.2
 Summary: Python Data Analitics Tool
-Home-page: https://github.com/Shochan024/makinyan
+Home-page: UNKNOWN
 Author: shochan024
 Author-email: jadetech0024@gmail.com
 Maintainer: shochan024
 Maintainer-email: jadetech0024@gmail.com
 License: MIT
+Download-URL: https://github.com/Shochan024/makinyan
 Description: readme
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 2
