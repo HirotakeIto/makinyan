@@ -20,7 +20,7 @@ def _get_requirements( filename ):
 
 
 pwd = os.path.dirname(os.path.abspath(__file__))
-version = '1.0.0'
+version = '0.0.1'
 
 setup(
     name='makinyan',
