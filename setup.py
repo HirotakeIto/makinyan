@@ -24,7 +24,7 @@ version = '1.0.0'
 
 setup(
     name='makinyan',
-    version='version',
+    version=version,
     url='https://github.com/Shochan024/makinyan',
     author='shochan024',
     author_email='jadetech0024@gmail.com',
