@@ -25,7 +25,7 @@ version = '0.0.4'
 setup(
     name='makinyan',
     version=version,
-    download_url='https://github.com/Shochan024/makinyan/blob/master/dist/makinyan-0.0.4.tar.gz',
+    url='https://github.com/Shochan024/makinyan',
     author='shochan024',
     author_email='jadetech0024@gmail.com',
     maintainer='shochan024',
