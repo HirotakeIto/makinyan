@@ -9,7 +9,7 @@ from colorama import Fore, Back, Style
 from progressbar import ProgressBar
 from boto.s3.key import Key
 
-class s3:
+class S3:
     """
     S3に接続し、各種機能を提供するクラス
     """

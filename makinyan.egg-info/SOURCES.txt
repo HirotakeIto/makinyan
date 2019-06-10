@@ -13,3 +13,5 @@ makinyan/optimizer/__init__.py
 makinyan/tools/__init__.py
 makinyan/tools/dget/__init__.py
 makinyan/tools/dget/s3.py
+makinyan/tools/file/__init__.py
+makinyan/tools/file/dfile_loader.py

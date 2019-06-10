@@ -14,9 +14,15 @@ class S3:
     S3に接続し、各種機能を提供するクラス
     """
 
-    def __init__( self , BUCKET_NAME="" ):
-        self.s3 = boto3.resource('s3')
-        self.bucket = self.s3.buckets( BUCKET_NAME )
+    def __init__( self , profile=None , BUCKET_NAME=None ):
+        if profile:
+            from boto3.session import Session
+            session = Session(profile_name=profile)
+            self.s3 = session.resource('s3')
+        else:
+            self.s3 = boto3.resource('s3')
+
+        self.bucket = self.s3.Bucket( BUCKET_NAME )
 
 
     def ls( self ):
@@ -25,21 +31,13 @@ class S3:
         return : list型
         """
 
-        return self.bucket.all()
+        return self.s3.buckets.all()
 
-
-    def deepls( self , pre ):
-        """
-        bucket配下にはるディレクトリを確認する
-        pre : string型 確認したいディレクトリ名
-        """
-
-        return self.bucket.list( prefix=pre )
 
 
     def dl( self , path ):
         """
-        ダウンロード
+        Download
         """
         file_list = self.bucket.objects.all()
         print( Fore.YELLOW + "downloading from S3..." )
@@ -59,16 +57,3 @@ class S3:
             p.update( i )
         print(Fore.YELLOW +"Done!")
         print(Style.RESET_ALL)
-
-
-
-
-    def get_url( self , filename , expire=60 ):
-        """
-        ダウンロード用URLを生成する
-        """
-
-        key = bucket.get_key( filename )
-        url = key.generate_url( expire ) #有効期限
-
-        return url
